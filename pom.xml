@@ -15,7 +15,10 @@
 	<packaging>jar</packaging>
 	<description>Demo project for Spring Boot</description>
 	<properties>
+	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
 		<java.version>21</java.version>
+		
    <!--  <maven.compiler.target>21</maven.compiler.target>
     <maven.compiler.source>21</maven.compiler.source> 
 		 <maven.compiler.release>21</maven.compiler.release>		
@@ -81,21 +84,27 @@
 	
 	<build>
 		<plugins>
-
 			<plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-      <!--  <version>3.12.1</version>-->
-        <configuration>
-          <release>21</release>
-        </configuration>
-      </plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+		<!--  <version>3.12.1</version>-->
+			<configuration>
+        	<release>21</release>
+        	</configuration>
+    	</plugin>
 
-			<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-resources-plugin</artifactId>
-    <version>3.1.0</version>
-</plugin> 
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-resources-plugin</artifactId>
+			<version>3.1.0</version>
+			<configuration>
+				<propertiesEncoding>UTF-8</propertiesEncoding>
+				<nonFilteredFileExtensions>
+					<nonFilteredFileExtension>xls</nonFilteredFileExtension>
+					<nonFilteredFileExtension>zip</nonFilteredFileExtension>
+				</nonFilteredFileExtensions>
+			</configuration>
+		</plugin> 
 			
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
