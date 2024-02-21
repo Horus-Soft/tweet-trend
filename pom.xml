@@ -17,8 +17,8 @@
 	<properties>
     <!-- <maven.compiler.target>21</maven.compiler.target>
     <maven.compiler.source>21</maven.compiler.source> -->
-		 <maven.compiler.release>21</maven.compiler.release>
-		<java.version>21</java.version>
+		 <maven.compiler.release>17</maven.compiler.release>
+		<!--<java.version>21</java.version> -->
 		<maven-jar-plugin.version>3.2.2</maven-jar-plugin.version>
 	</properties>
 
